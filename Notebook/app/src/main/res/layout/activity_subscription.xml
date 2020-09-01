@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD700"
+    tools:context=".SubscriptionActivity">
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="283dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Language Lists"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+    <ListView
+        android:id="@+id/langLists"
+        android:layout_width="290dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFA500"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="OnClickUpdateSelectedLanguage"
+        android:text="Update"
+        android:textSize="20sp"
+        android:textColor="#FF4500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#FFA500"
+        app:layout_constraintTop_toBottomOf="@+id/langLists" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
